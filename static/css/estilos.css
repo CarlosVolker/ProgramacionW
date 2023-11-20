@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: grid;
+    margin-bottom: 5px;
+    gap: 10px;
+
+}
+form#ejercicio1 label {
+    font-weight: bold;
+    text-align: left;
+
+}
+form#ejercicio2 label {
+    text-align: center;
+}
+
+input[type="text"], [type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container a {
+    display: block;
+    text-decoration: underline;
+    color: #fff;
+    margin: 0 auto 10px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.button-container a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Estilo para ver el resultado */
+.resultado {
+    display: none;
+
+    margin-top: 20px;
+}
+
+.resultado.ejercicio1 {
+    text-align: left;
+    display: block;
+}
+
+.resultado.ejercicio2 {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+}
